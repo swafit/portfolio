@@ -1,0 +1,43 @@
+
+body{background-color: turquoise;
+	color: black;
+	/*font-size:24px; I need to find a solution to this*/
+	/*margin: auto;*/
+}
+h1{color:darkgoldenrod;
+	font-size:5rem;
+	text-shadow: 2px 2px var(--purple);
+}
+ h1, footer{text-align: center}
+header ul li{font-weight:bold;
+font-size:1.2rem;}
+a:hover{background: linear-gradient(to bottom, yellow, orange, red);
+	color:var(--primary);
+font-size: 150%;}
+
+a{color:mediumvioletred;}
+.op{opacity: 50%;}
+.hi{height: 200px;}
+.ss{width: 500px;}
+.wp{height: 500px;}
+.fi{height: 150px;}
+
+footer{background-color: lightpink;
+	font-size:75%;
+  border: 2px solid black;
+  border-radius: 200px;
+  margin-top:50px;
+  padding: 7px;
+  box-shadow: 5px 5px #E25B4F;
+}
+
+td,th{border:2px solid black;
+padding:10px 50px 10px 30px;}
+
+label {width:5%;
+ text-align:right;
+display: inline-block;
+vertical-align:top;
+margin: 5px 0 10px 5%;
+}
+/*My name is William Chalifoux*/

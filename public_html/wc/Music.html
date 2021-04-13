@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<!--My name is William Chalifoux-->
+	<meta charset="utf-8">
+	<meta name="description" content="Multiple beats and songs composed by William Chalifoux!!!">
+	<meta name="keywords" content="Music, beats, William the DJ, William Beats, WC beats, WC songs, WC music, music">
+	<title>Music_WC</title>
+	<link href="wc.css" rel="stylesheet" type="text/css">
+	<link href="Images/wc.jpeg" rel="icon" type="image/jpeg">
+</head>
+
+<body>
+	<header>
+		<a href="index.html"><img src="Images/wc.jpeg" alt="WC" height="150"></a>
+		<nav>
+			<a href="index.html">About Me</a>
+			<a href="Explanation.html">Page Explanation</a>
+			<a href="Passions.html">Passions</a>
+			<a href="School.html">School</a>
+			<a href="Music.html">Music</a>
+			<a href="PastProjects.html">Past Projects</a>
+			<a href="webpages.html">WebPage Designs</a>
+		</nav>
+	</header>
+
+	<main>
+		<h1>My Music</h1>
+		<p>I have composed a song called <a href="Audio/ComputerCash.mp3">Computer Cash</a>. I initially composed Computer Cash as a poem and then I modified it into a song.</p>
+		<audio controls title="Computer Cash" class="">
+			<source src="Audio/ComputerCash.mp3" type="audio/mpeg">
+		</audio>
+
+		<p>In the process, I also made this <a href="Audio/Beat.mp3">awesome beat</a> which I really liked.</p>
+		<audio controls title="William's Beat" class="">
+			<source src="Audio/Beat.mp3" type="audio/mpeg">
+		</audio>
+		<p>
+			Here is my famous spinning vinyl record video and gif
+		</p>
+		<video width="400" height="400" controls autoplay loop>
+			<source src="Images/WillVideo.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+		<img src="Images/William.gif" type="image/gif" style="float:right;">
+		<h2>Currently offering classes</h2>
+		<p>I am currently offering classes for a few instruments and singing. Simply fill in the form below if you're interested in getting a spot and I will get in contact with you for more information.</p>
+		<form method="post" action="mailto: class.401.class@gmail.com" name="Music Form">
+			<!--this is one of my alternate email address-->
+			<fieldset>
+
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" id="Name" required><br>
+
+				<label for="Email">Email:</label>
+				<input type="email" name="Email" id="Email" required><br>
+
+
+				<label for="member">What may I help you with?</label>
+
+				<select name="member" id="member">
+					<option value="Bass">Bass</option>
+					<option value="Guitar">Guitar</option>
+					<option value="Piano">Piano</option>
+					<option value="Flute">Flute</option>
+					<option value="Harmonica">Harmonica</option>
+					<option value="Harpe">Harpe</option>
+					<option value="Cello">Cello</option>
+					<option value="Other">Other</option>
+					<option value="Violin">Violin</option>
+					<option value="Drums">Drums</option>
+					<option value="Singer" disabled>Singing</option>
+				</select>
+				<p style="font-size:14px; margin-left:30%;">*Please note I currently have a sore throat therefore singing classes are temporarily stopped*</p>
+
+				<label for="More">More about you:</label>
+				<textarea name="More" placeholder="Tell me about your experience in music" id="More" cols="50" rows="5" required></textarea><br>
+
+				<input type="reset" style="margin: 0 1% 0 30%;">
+				<input type="submit" value="Send">
+
+			</fieldset>
+		</form>
+	</main>
+	<footer>
+		&copy; 2020, William Chalifoux
+		<address><a href="mailto:william.chalifoux@gmail.com">william.chalifoux@gmail.com</a></address>
+	</footer>
+</body>
+<!--My name is William Chalifoux-->
+
+</html>
