@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>JJCH Jobs</title>
+		<link href="JJCH.css" rel="stylesheet" type="text/css">
+		<link href="Images/Favi.png" rel="icon" type="image/png">
+		<!--https://www.google.com/url?sa=i&url=https%3A%2F%2Ffreepngimg.com%2Fpng%2F31398-coffee-logo-image%2Ficon&psig=AOvVaw1Z2gqnr_GgYHkos_8VMJyX&ust=1603515957798000&source=images&cd=vfe&ved=0CAMQjB1qFwoTCOiFvs_4yewCFQAAAAAdAAAAABAO-->
+	</head>
+	<body>
+		<!--My name is William Chalifoux-->
+		<header>
+
+				<a href="index.html">
+					<img src="Images/Javalogo.gif" alt="JavaJam Logo">
+				</a>
+		</header>
+		<nav>
+							<ul>
+				<li><a href ="index.html">Home</a></li>
+									<li><a href ="menu.html">Menu</a></li>
+									<li>Music
+										<ul class="month">
+										<li><a href="September.html">September</a></li>
+										<li><a href="October.html">October</a></li>
+										<li><a href="November.html">November</a></li>
+									</ul></li>
+										<li><a href ="Jobs.html">Jobs</a></li>
+										<li><a href ="Gear.html">Gear</a></li>
+							</ul>
+		</nav>
+
+            <main class="cr">
+
+			<p>Want to work at JavaJam? Fill out the form below to start your application.</p>
+
+			<form class="ri" name="Job application" method="get"><!--I could also add action="store.php" since I saw it in the notes but I don't remember it-->
+
+				<label for="Name">Name:</label>
+				<input type="text" name="Name" id="Name" required><br>
+
+				<label for="Email">E-mail:</label>
+				<input type="email" name="Email" id="Email" required><br>
+
+				<label for="Telephone">Telephone Number:</label>
+				<input type="tel" name="Telephone" id="Telephone"><br>
+
+				<label for="Position">Position:</label>
+				<input list="Jobs" name="Position" id="Position"><!--could have also used a select but wanted to show the use of the list here and of the select on the gear page-->
+				<input type="radio" name="PT" id="PT" value="Part-Time"><label for="PT" class="none">Part-Time</label>
+				<input type="radio" name="FT" id="FT" value="Full-Time"><label for="FT" class="none">Full-Time</label>
+				<br>
+				<datalist id="Jobs">
+					<option value="Janitor">
+					<option value="Dish scrubber">
+					<option value="Chef">
+					<option value="Waiter">
+				</datalist>
+
+				<label for="Availability">Date of Availability: </label>
+				<input type="date" name="Availability" id="Availability">
+
+				<input type="checkbox" name="AM" id="AM" value="AM">
+				<label for="AM" class="none">AM</label>
+
+				<input type="checkbox" name="PM" id="PM" value="PM">
+				<label for="PM" class="none">PM</label>
+				<br>
+				<label for="Years">Years of Experience:</label>
+				<input type="number" name="Years" id="Years" min="0" max="120"><br>
+
+
+
+				<label for="Experience">Experience: </label>
+				<textarea name="Experience" id="Experience" cols="20" rows="2"></textarea> <br>
+
+
+				<input type="submit" value="Apply Now" id="sub">
+
+			</form>
+
+
+		</main>
+		<footer>
+			&copy; 2020, JavaJam Coffee House<br>
+			<address><a href="mailto:william@chalifoux.com">William@Chalifoux.com</a></address>
+		</footer>
+	</body>
+</html>

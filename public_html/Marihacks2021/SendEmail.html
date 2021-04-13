@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Send Email</title>
+  <link rel="stylesheet" type="text/css" href="assets/pixel.css">
+  <!-- Code here is to aid in distinguishing elements and demonstrating
+  features and is not included in the Pixel library. -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
+
+</head>
+
+<body>
+  <nav id="navbar" class="nav center side medium">
+    <button class="menuButton" onclick="pixel.navbarExtend()"><img id="menuButton" data-src="icons/menu_close.svg" src="assets/Hermes.png"></button>
+    <div id="navContent" class="nav-content center">
+      <a href="index.html" class="link"><img src="assets/Hermes.png"></a>
+      <a href="index.html" class="link active">Home</a>
+      <a href="https://docs.google.com/forms/d/1ZgEl9uNPNL9DC8tIwug9YpLMbWflU__MsnWdRipZUKw/edit" class="link active">Sign Up</a>
+      <a href="SendEmail.html" class="link active">Send Email</a>
+      <a href="aboutUs.html" class="link active">About Us</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="row justify-center center landing">
+      <div class="col-1"></div>
+      <div class="col-10">
+        <h1>Send Email</h1>
+        <form style="margin-bottom:250px; margin-top:50px;">
+           <label for="user" class="formLabels">Admin user:</label>
+          <textarea cols="40" span="2" id="user" name="user" placeholder="enter Admin"></textarea><br>
+            <label for="pswd" class="formLabels">Password:</label>
+          <textarea cols="40" span="2" id="pswd" name="pswd" placeholder="Enter Mercurious"></textarea><br>
+          <label for="emaillist" class="formLabels">Email list:</label>
+          <textarea cols="40" span="2" id="emaillist" name="emaillist" placeholder="Please enter the list of emails and separate each entry by a comma."></textarea><br>
+          <label for="namelist" class="formLabels">Name list:</label>
+          <textarea cols="40" span="2" id="namelist" name="namelist" placeholder="Please enter the list of names and separate each entry by a comma."></textarea><br>
+          <label for="subject" class="formLabels">Subject:</label>
+          <textarea cols="40" span="2" id="subject" name="subject" placeholder="Please enter the subject for the email."></textarea><br>
+          <label for="prebody" class="formLabels">Introduction:</label>
+          <textarea cols="40" span="2" id="prebody" name="prebody" placeholder="Please enter the text before we say the name IE: Dear{add no space at the end of the massage}"></textarea><br>
+          <label for="body" class="formLabels">Body:</label>
+          <textarea id="body" name="body" placeholder="Please enter the body for the email."></textarea><br>
+          <input type="button" value="Send Email" onclick="emai()"/>
+        </form>
+      </div>
+      <div class="col-10"></div>
+      </br>
+    </div>
+  </div>
+  <script>
+
+    function emai() {
+var user= document.getElementById("user").value;
+      var pswd= document.getElementById("pswd").value;
+      var names= document.getElementById("namelist").value;
+      var emails= document.getElementById("emaillist").value;
+      var el=emails.split(", ");
+      var nl=names.split(", ");
+      var subject= document.getElementById("subject").value;
+      var body= document.getElementById("body").value;
+      var prebody= document.getElementById("prebody").value;
+      if ((user=="Admin")&&(pswd=="Mercurious")){
+      
+      for (var i = 0; i < emails.length; i++) {
+        Email.send({
+          SecureToken: "20b6406e-9153-4ac5-8558-59225455b805",
+          //https://www.smtpjs.com
+          To: el[i],
+          From: "Mercurious@isp.com",
+          Subject: subject,
+          Body: prebody + " " + nl[i] +", "+ body+"Provided by Mercuirous2021."
+        }).then(function(response) {
+               console.log('SUCCESS!', response.status, response.text);
+            }, function(error) {
+               console.log('FAILED...', error);
+            });
+            
+      }window.alert("Email(s) sent!");}
+      else {
+          window.alert("Wrong login credentials.");
+      }
+    }
+  </script>
+  <div class="container">
+    <div class="row dark justify-center pad-lg center">
+      <div class="col-12">
+        <p class="small text-white">Site created by Mercurious, 2021.</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

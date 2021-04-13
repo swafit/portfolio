@@ -1,0 +1,69 @@
+
+body{background-color: turquoise;
+	color: black;
+	font-size:24px;
+	font-family: helvetica, sans-serif, arial;
+	margin: auto;
+	padding:5%;
+}
+h1{color:darkgoldenrod;
+	font-size:50px;
+	text-align: center;
+	text-shadow: 2px 2px purple;
+}
+
+
+
+header{text-align: center}
+nav{border: 4px solid black;
+	border-radius: 20px;
+	background-color: mediumslateblue;
+	margin-top:50px;
+	font-weight:bold;
+	padding:7px;
+}
+nav a{padding:0px 20px;
+	color:chartreuse;
+	text-decoration:none;
+}
+
+a:hover{background: linear-gradient(to bottom, yellow, orange, red);
+}
+
+a:visited{color:mediumvioletred;}
+.op{opacity: 50%;}
+#cen{text-align: center;}
+.hi{height: 200px;}
+.ss{width: 500px;}
+.wp{height: 500px;}
+.fi{height: 150px;}
+.exp{margin-right: 50%;
+}
+.para{padding:10%;
+  text-align:justify;}
+footer{text-align: center;
+	background-color: lightpink;
+	font-size:75%;
+  border: 2px solid black;
+  border-radius: 200px;
+  margin-top:50px;
+  padding: 7px;
+  box-shadow: 5px 5px #E25B4F;
+}
+table{border:3px solid black;
+border-collapse: collapse;
+}
+
+td,th{border:2px solid black;
+padding:10px 50px 10px 30px;}
+
+label {width:30%;
+ text-align: right;
+display: inline-block;
+vertical-align: top;
+margin: 5px 0 10px 5%;
+}
+/*My name is William Chalifoux*/
+.asi{width:50%;
+  float:right;
+padding: 1%;}
