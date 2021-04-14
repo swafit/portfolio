@@ -13,6 +13,7 @@
       <h3>Fun Stuff</h3>
     </div>
     <div>
+      <script>.get('/cool', (req, res) => res.send(cool()))</script>
       <h3>Serious Stuff</h3>
     </div>
     <div>
