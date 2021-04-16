@@ -13,46 +13,14 @@
       <h3>Fun Stuff</h3>
     </div>
     <div>
-      <script>//https://glacial-beyond-29187.herokuapp.com/cool
-      const { spawn } = require('child_process');
-      const got = require('got');
-      const test = require('tape');
-
-      // Start the app
-      const env = Object.assign({}, process.env, {PORT: 5000});
-      const child = spawn('node', ['index.js'], {env});
-
-      test('responds to requests', (t) => {
-        t.plan(4);
-
-        // Wait until the server is ready
-        child.stdout.on('data', _ => {
-          // Make a request to our app
-          (async () => {
-            const response = await got('https://glacial-beyond-29187.herokuapp.com/');
-            // stop the server
-            child.kill();
-            // No error
-            t.false(response.error);
-            // Successful response
-            t.equal(response.statusCode, 200);
-            // Assert content checks
-            t.notEqual(response.body.indexOf("<title>Node.js Getting Started on Heroku</title>"), -1);
-            t.notEqual(response.body.indexOf("Getting Started on Heroku with Node.js"), -1);
-          })();
-        });
-      });
-      const cool = require('cool-ascii-faces');
-const express = require('express');
-const path = require('path');
-const PORT = process.env.PORT || 5000;
-express()
-  .use(express.static(path.join(__dirname, 'public')))
-  .set('views', path.join(__dirname, 'views'))
-  .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('pages/index'))
-  window.alert(cool()); 
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`));</script>
+      <div class="glitch-embed-wrap" style="height: 486px; width: 100%;">
+  <iframe
+    allow="geolocation; microphone; camera; midi; encrypted-media"
+    src="https://glitch.com/embed/#!/embed/iodized-nettle-latency?previewSize=100&previewFirst=true&sidebarCollapsed=true"
+    alt="iodized-nettle-latency on Glitch"
+    style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+</div>
       <h3>Serious Stuff</h3>
     </div>
     <div>
