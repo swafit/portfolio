@@ -4,6 +4,14 @@
 <section class="index-intro">
   <h1>This Is An Introduction</h1>
   <p>Here is an important paragraph that explains the purpose of the website and why you are here!</p>
+  <div class="glitch-embed-wrap" style="height: 486px; width: 100%;">
+  <iframe
+  allow="geolocation; microphone; camera; midi; encrypted-media"
+  src="https://glitch.com/embed/#!/embed/iodized-nettle-latency?previewSize=100&previewFirst=true&sidebarCollapsed=true"
+  alt="iodized-nettle-latency on Glitch"
+  style="height: 100%; width: 100%; border: 0;">
+  </iframe>
+  </div>
 </section>
 
 <section class="index-categories">
@@ -13,14 +21,7 @@
       <h3>Fun Stuff</h3>
     </div>
     <div>
-      <div class="glitch-embed-wrap" style="height: 486px; width: 100%;">
-  <iframe
-    allow="geolocation; microphone; camera; midi; encrypted-media"
-    src="https://glitch.com/embed/#!/embed/iodized-nettle-latency?previewSize=100&previewFirst=true&sidebarCollapsed=true"
-    alt="iodized-nettle-latency on Glitch"
-    style="height: 100%; width: 100%; border: 0;">
-  </iframe>
-</div>
+
       <h3>Serious Stuff</h3>
     </div>
     <div>
