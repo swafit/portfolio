@@ -1,21 +1,6 @@
-if (getCookie("darkmode")==null) {
-  addCookie("darkmode", 0);
-}
-
-function myFunction() {
-  var element = document.body;
-  if (getCookie("darkmode")==0) {
-    editCookie("darkmode", 1);
-  }else{
-    editCookie("darkmode", 0);
-  }
-
-
-}
-if (getCookie("darkmode")==1) {
-  element.classList.add("dark-mode");
-}else{
-
+function addCookie(cname, value) {
+  var newCookie = cname + "=" + value;
+  document.cookie += newCookie;
 }
 function editCookie(cname, newValue) {
     var cookies = document.cookie;
@@ -52,8 +37,22 @@ function editCookie(cname, newValue) {
     }
     return false;
   }
+if (getCookie("darkmode")==null) {
+  addCookie(darkmode, "0");
+}
 
-  function addCookie(cname, value) {
-    var newCookie = cname + "=" + value;
-    document.cookie += newCookie;
+function myFunction() {
+  var element = document.body;
+  if (getCookie("darkmode")==0) {
+    editCookie(darkmode, "1");
+  }else{
+    editCookie(darkmode, "0");
   }
+
+
+}
+if (getCookie("darkmode")==1) {
+  element.classList.add("dark-mode");
+}else{
+
+}
