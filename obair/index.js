@@ -1,6 +1,6 @@
-if (getCookie("darkmode")==null) {
+/*if (getCookie("darkmode")==null) {
   addCookie("darkmode", 0);
-}
+}*/
 
 function myFunction() {
   var element = document.body;
