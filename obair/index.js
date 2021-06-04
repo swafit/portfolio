@@ -69,9 +69,12 @@ function myFunction() {
 
 }
 //sets the webpage to darkmode if 'darkmode' is 1
-var element = document.body;
-if (getCookie("darkmode") == 1) {
-  element.classList.add("dark-mode");
-} else if (element.classList.contains("darkmode")==true){
-  element.classList.remove("dark-mode");
+
+  // var element = document.getElemenyById("body");
+var x=document.getElemenyById("body").classList.contains("darkmode")
+var code= getCookie("darkmode");
+if ( code== 1) {
+  document.getElemenyById("body").classList.add("dark-mode");
+} else if (x==true){
+  document.getElemenyById("body").classList.remove("dark-mode");
 }
