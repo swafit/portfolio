@@ -4,11 +4,25 @@ body {
   color: black;
   font-size: 25px;
   background: #1C6EA4;
-background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
-background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
-background: linear-gradient(to right, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
-}
+/*background: -moz-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);
+background: -webkit-linear-gradient(left, #1C6EA4 0%, #2388CB 50%, #144E75 100%);*/
+background: linear-gradient(to right, tan 0%, #2388CB 50%, tan 100%);
 
+}
+nav a{
+  text-decoration: none;
+  margin-left: 5%;
+}
+nav {
+  text-align: center;
+  border: solid 3px blue;
+  border-radius: 50px;
+  background-color: gray;
+
+}
+h1, h2, #center {
+  text-align: center;
+}
 .dark-mode{
 
   background-color: black;
