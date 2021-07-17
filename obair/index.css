@@ -20,11 +20,28 @@ nav {
   background-color: gray;
 
 }
-h1, h2, #center {
+h1, h2, .center {
   text-align: center;
 }
 .dark-mode{
 
   background-color: black;
   color: white;
+}
+.left{
+  width: 40%;
+  float:left;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+.right{
+  width: 40%;
+  float: right;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.cont{
+  font-size: 15px;
+  margin: 0;
 }
